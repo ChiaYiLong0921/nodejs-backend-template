@@ -9,7 +9,7 @@ require('./models/User');
 const {initializeDatabase } = require('./db/connect')
 
 app.get('*', (req, res) => {
-  res.send('jobster')
+  res.send('Hi, you server is running here')
 })
 
 

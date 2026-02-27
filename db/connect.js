@@ -30,7 +30,6 @@ const initializeDatabase = async () => {
     console.log('Connected to IDEN_DB successful.');
 
     require('../models/User');
-    // require('../models/Job');
 
     // Sync models with the database
     await iden_seq.sync({ alter: true });
@@ -40,5 +39,5 @@ const initializeDatabase = async () => {
   }
 };
 
-// Export the Sequelize instance and initialization function
+// iden_seq as user db and initialization func for app.js
 module.exports = { iden_seq, initializeDatabase };
